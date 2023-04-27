@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="one">
+        <h1>Generate Random Password</h1>
+        <input readonly type="text" name="" id="holder" class="text" />
+        <input
+          type="button"
+          value="Copy"
+          id="btn-copy"
+          class="copy"
+          onclick="copyfunc()"
+        />
+        <input
+          type="button"
+          value="Generate"
+          id="btn-generate"
+          class="Generate"
+          onclick="generate()"
+        />
+      </div>
+      <div class="two">
+        <div class="carrier">
+          <input type="button" value="easy" id="easy" onclick="easyfunc()" />
+          <input type="button" value="medium" id="medium" onclick="medfunc()" />
+          <input type="button" value="hard" id="hard" onclick="hardfunc()" />
+        </div>
+        <div class="range">
+          <label for="ranger" id="txt-range">Length (between 1 and 50):</label>
+          <input type="range" id="ranger" name="points" min="1" max="50" value="5" oninput="check()">
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js.js"></script>
+</html>
