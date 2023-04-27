@@ -22,6 +22,9 @@ const copyfunc = () => {
 //displaying numbers of characters to be selected
 const ranger = () => {
   label.innerHTML = `Length (${range.value} characters)`;
+  if (difficulty != 0) {
+    generate();
+  }
 };
 
 //selecting and diselecting easy button

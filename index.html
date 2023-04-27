@@ -29,13 +29,14 @@
       </div>
       <div class="two">
         <div class="carrier">
+          <span>Difficulty: </span>
           <input type="button" value="easy" id="easy" onclick="easyfunc()" />
           <input type="button" value="medium" id="medium" onclick="medfunc()" />
           <input type="button" value="hard" id="hard" onclick="hardfunc()" />
         </div>
         <div class="range">
           <label for="ranger" id="txt-range">Length (between 1 and 50):</label>
-          <input type="range" id="ranger" name="points" min="1" max="50" value="5" oninput="check()">
+          <input type="range" id="ranger" name="points" min="1" max="50" value="5" oninput="ranger()">
         </div>
       </div>
     </div>
