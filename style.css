@@ -1,6 +1,133 @@
-.main{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+  }
+  #topic{
+    color: #555;
+  }
+  .main {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .one {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .one h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .text {
+    width: 60%;
+    height: 40px;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .copy,
+  .Generate {
+    width: 100px;
+    height: 40px;
+    margin: 0 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .copy:hover,
+  .Generate:hover {
+    background-color: #555;
+  }
+  
+  .two {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
+  }
+  
+  .carrier {
+    display: flex;
+    align-items: center;
+  }
+  
+  .carrier span {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  input[type="button"] {
+    width: 80px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  input[type="button"]:hover {
+    background-color: #555;
+  }
+  
+  .range {
+    width: 50%;
+  }
+  
+  #txt-range {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #ranger {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .main {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .text {
+      width: 100%;
+    }
+  
+    .two {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .carrier {
+      margin-bottom: 10px;
+    }
+  
+    input[type="button"] {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
