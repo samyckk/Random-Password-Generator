@@ -69,12 +69,23 @@
     display: flex;
     align-items: center;
   }
+
+  #easy, #medium, #hard{
+    padding: 3px 10px;
+    margin: 3px;
+  }
   
   .carrier span {
     font-size: 18px;
     margin-right: 10px;
   }
-  
+
+  #btn-copy{
+    margin: auto;
+  }
+  #btn-generate{
+    margin: 5px auto;
+  }
   input[type="button"] {
     width: 80px;
     height: 30px;
