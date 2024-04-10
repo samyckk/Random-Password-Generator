@@ -58,7 +58,7 @@ const medfunc = () => {
 const hardfunc = () => {
   if (difficulty != 3) {
     difficulty = 3;
-    btnHard.style.background = " rgba(212, 29, 29, 0.756)";
+    btnHard.style.background = " rgb(248, 83, 83)";
     btnMed.style.background = "";
     btnEasy.style.background = "";
   } else {
