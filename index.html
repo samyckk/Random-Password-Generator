@@ -10,7 +10,7 @@
   <body>
     <div class="main">
       <div class="one">
-        <h1 id="topic">Generate Random Password</h1>
+        <h1 id="topic">Generate <span id="random">Random Password</span></h1>
         <input readonly type="text" placeholder="Generated Password will be shown here" name="" id="holder" class="text" />
         <input
           type="button"
@@ -29,13 +29,13 @@
       </div>
       <div class="two">
         <div class="carrier">
-          <span>Difficulty: </span>
-          <input type="button" value="easy" id="easy" onclick="easyfunc()" />
-          <input type="button" value="medium" id="medium" onclick="medfunc()" />
-          <input type="button" value="hard" id="hard" onclick="hardfunc()" />
+          <span class="dif">Difficulty: </span>
+          <input type="button" value="Easy" id="easy" onclick="easyfunc()" />
+          <input type="button" value="Medium" id="medium" onclick="medfunc()" />
+          <input type="button" value="Hard" id="hard" onclick="hardfunc()" />
         </div>
         <div class="range">
-          <label for="ranger" id="txt-range">Length (between 1 and 50):</label>
+          <label for="ranger" id="txt-range" class="dif">Length (between 1 and 50):</label>
           <input type="range" id="ranger" name="points" min="1" max="50" value="5" oninput="ranger()">
         </div>
       </div>
